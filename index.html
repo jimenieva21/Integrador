@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.html">
+    <link rel="stylesheet" href="register.html">
+    <link rel="icon" href="./assets/logo.png">
+    <title>Génesis</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/logo.png" class="logo" alt="">
+        <nav class="navbar">
+            <label for="menu-toggle" class="menu-label">
+                <img src="./assets/menu.png" alt="menu" class="menu-icon">
+            </label>
+            <input type="checkbox" id="menu-toggle">
+            <ul class="navbar-list">
+                <li><a href="">Inicio</a></li>
+                <li><a href="#hero">Quiénes somos</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+
+            <label for="cart-toggle" class="cart-label">
+                <img src="./assets/descarga.png" alt="carrito de compras" class="cart-icon">
+            </label>
+            <input type="checkbox" id="cart-toggle">
+
+            <div class="cart">
+                <h2>Tu carrito</h2>
+                <div class="cart-item">
+                    <img src="./assets/chessecake.jpg" alt="producto">
+                    <div class="item-info">
+                       <h3 class="item-title">Chessecake</h3>
+                       <span class="item-price">$800</span>
+                       <div class="item-handler">
+                         <span class="quantity-handler down">-</span>
+                         <span class="item-quantity">1</span>
+                         <span class="quantity-handler up">+</span>
+                       </div>
+                    </div>
+                    
+                </div>
+                <div class="cart-item">
+                    <img src="./assets/fideos.jpg" alt="NFT del
+                    carrito">
+                    <div class="item-info">
+                       <h3 class="item-title">Fideos</h3>
+                       <span class="item-price">$1000</span>
+                       <div class="item-handler">
+                         <span class="quantity-handler down">-</span>
+                         <span class="item-quantity">1</span>
+                         <span class="quantity-handler up">+</span>
+                       </div>
+                    </div>
+                    
+                </div>
+                <div class="cart-item">
+                    <img src="./assets/canelones.jpg" alt="producto">
+                    <div class="item-info">
+                       <h3 class="item-title">Canelones</h3>
+                       <span class="item-price">$1500</span>
+                       <div class="item-handler">
+                         <span class="quantity-handler down">-</span>
+                         <span class="item-quantity">1</span>
+                         <span class="quantity-handler up">+</span>
+                       </div>
+                    </div>
+                    
+                </div>
+                <div class="cart-item">
+                    <img src="./assets/lasagna.jpg" alt="NFT del
+                    carrito">
+                    <div class="item-info">
+                       <h3 class="item-title">Lasagna</h3>
+                       <span class="item-price">$1400</span>
+                       <div class="item-handler">
+                         <span class="quantity-handler down">-</span>
+                         <span class="item-quantity">1</span>
+                         <span class="quantity-handler up">+</span>
+                       </div>
+                    </div>
+                    
+                </div>
+
+                <span class="divider"></span>
+                <div class="cart-total">
+                    <p>Total:</p>
+                    <span>$4700</span>
+                </div>
+                <button class="btn-add">Comprar</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="hero-info">
+                <h1>¡Somos Génesis!</h1>
+                <p>Una pequeña empresa familiar, que inició con la elaboración y comercialización 
+                    de pastas caseras en el año 2008. Hoy te ofrecemos...</p>
+                <a href="#products">Pastas Caseras y algo más</a>
+            </div>
+           
+           <div class="hero-card">
+             <img src="./assets/logo-fondo.png" alt="logo">
+           </div>
+        </section>
+
+         <section id="about">
+            <p>Nos encontramos en la ciudad de Rosario, Santa Fe. Nuestro objetivo es que siempre puedas encontrar
+                en tu freezer una opción rápida y rica, elaborada con productos de primera calidad. Conservamos clientes
+                desde nuestros inicios, porque siempre hemos mantenido las primeras marcas para nuestra
+                elaboración.</p>
+         </section>
+         
+         <section id="products">
+            <h1>Nuestros productos</h1>
+            <h2>Pastas</h2>
+            <div class="pastas">
+               <div class="products-card">
+                  <img src="./assets/sorrentinos.jpg" alt="sorrentinos">
+                  <h3>Sorrentinos</h3>
+                  <p>$1500/docena</p>
+                  <a href="">Agregar al carrito</a>
+               </div>
+               <div class="products-card">
+                <img src="./assets/canelones.jpg" alt="canelones">
+                <h3>Canelones</h3>
+                <p>$1500/6 unidades</p>
+                <a href="">Agregar al carrito</a>
+               </div>
+               <div class="products-card">
+                <img src="./assets/fideos.jpg" alt="fideos">
+                <h3>Fideos</h3>
+                <p>$1000/bandeja de 1/2 kilo</p>
+                <a href="">Agregar al carrito</a>
+               </div>
+               <div class="products-card">
+                <img src="./assets/lasagna.jpg" alt="lasagna">
+                <h3>Lasagna</h3>
+                <p>$1400/bandeja</p>
+                <a href="">Agregar al carrito</a>
+               </div>
+            </div>
+            <h2>Postres Individuales</h2>
+            <div class="postres">
+                <div class="products-card">
+                    <img src="./assets/chessecake.jpg" alt="chessecake">
+                    <h3>Chessecake</h3>
+                    <p>$800</p>
+                    <a href="">Agregar al carrito</a>
+                </div>
+                <div class="products-card">
+                    <img src="./assets/chocotorta.jpg" alt="chocotorta">
+                    <h3>Chocotorta</h3>
+                    <p>$800</p>
+                    <a href="">Agregar al carrito</a>
+                </div>
+                <div class="products-card">
+                    <img src="./assets/tiramisu.jpg" alt="tiramisú">
+                    <h3>Tiramisú</h3>
+                    <p>$800</p>
+                    <a href="">Agregar al carrito</a>
+                </div>
+                <div class="products-card">
+                    <img src="./assets/oreo.jpg" alt="oreo">
+                    <h3>Oreo</h3>
+                    <p>$800</p>
+                    <a href="">Agregar al carrito</a>
+                </div>
+            </div>
+         </section>
+
+         <section id="contact">
+            <h2>Consultas</h2>
+            <div class="contact-form">
+                <form action="datos" class="datos">
+                    <label for="nombre"></label>
+                    <input type="text" id="nombre" placeholder="Nombre"/>
+                    <label for="correo"></label>
+                    <input type="email" id="correo" placeholder="Correo Electrónico"/>
+                    <label for="asunto"></label>
+                    <input type="text" id="asunto" placeholder="Asunto"/>
+                </form>
+                <form action="descripción" class="descripcion">
+                    <label for="texto"></label> 
+                    <textarea name="Descripción" id="texto" cols="40" rows="8" placeholder="Descripción"></textarea>
+                </form> 
+            </div>
+            <a href="" class="enviar">Enviar</a>
+            <div class="login-registro">
+                <a href="login.html" class="ingresar">Ingresar</a>
+                <p>¿No tenés cuenta?</p>
+                <a href="register.html" class="registrarte">Registrarse</a>
+            </div>
+         </section>
+         
+    </main>
+    <footer>
+        <h2>¡Encontranos en nuestras redes!</h2>
+        <div class="logo-redes">
+            <a href=""><img src="./assets/facebook.png" alt=""></a> 
+            <a href=""><img src="./assets/instagram.png" alt=""></a>
+            <a href=""><img src="./assets/twitter.png" alt=""></a>
+        </div>
+        <p>©Copyrigth GENESIS</p>
+     </footer>
+</body>
+</html>

@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    --text-orange: #f7b526;
+    --text-black: #000;
+    --background-color: #d48787;
+    --background-nav: #fff;
+    --background-strong: #df7f26;
+    --background-footer: #5f350e;
+}
+
+header {
+    width: 100%;
+    background: linear-gradient(to left, var(--text-orange), var(--background-nav) 90%) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 30px;
+    top: 0;
+    position: fixed;
+    z-index: 2;
+}
+
+.logo {
+    height: 65px;
+}
+
+.navbar,
+.navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    gap: 100px;
+}
+
+.navbar-list {
+    gap: 30px;
+}
+
+.navbar-list a {
+    color: var(--text-black);
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.menu-icon {
+    height: 50px;
+    display: none;
+    cursor: pointer;
+    width: 40px;
+    padding: 5px;
+
+}
+
+#menu-toggle,
+#cart-toggle {
+    display: none;
+}
+
+.cart-icon {
+    font-weight: 600;
+    height: 50px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-right: 1rem;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.cart {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    padding: 50px 30px;
+    background: var(--text-orange);
+    border-left: 1px solid var(--nav-bg);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow-y: scroll;
+    height: calc(100vh - 65px);
+    display: none;
+    border-radius: 10px;
+}
+
+.cart h2 {
+    font-size: 24px;
+    color: var(--background-nav);
+}
+
+.cart img {
+    height: 65px;
+    width: 65px;
+    border-radius: 15px;
+}
+
+.cart-item {
+    display: flex;
+    gap: 20px;
+    border: solid var(--background-nav);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.item-info {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.item-handler{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.quantity-handler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid var(--background-nav);
+    padding: 2px 8px;
+    background: linear-gradient(to left, var(--background-strong), var(--text-orange));
+    border-radius: 10px ;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.item-quantity {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.divider {
+    border: solid 1px var(--text-black);
+}
+
+.cart-total p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn-add {
+    background: var(--text-black);
+    border: none;
+    padding: 10px 35px;
+    color: var(--background-nav);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+#cart-toggle:checked+.cart {
+    display: flex;
+}
+
+body {
+    background: linear-gradient(rgba(15, 0, 0, 0.1), rgba(17, 1, 1, 0.9)), url(./assets/background-contact.jpg);
+    height: calc(100vh - 65px);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#ingreso {
+    margin-top: 100px;
+    padding: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#ingreso h2 {
+    font-size: 40px;
+    padding: 10px 0;
+    color: var(--background-nav);
+}
+
+#ingreso form{
+	width:300px;
+	padding:10px;
+	border-radius:10px;
+	margin: 0;
+	justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 40px;
+}
+
+form label {
+	width:72px;
+	font-weight: bold;
+	display: flex;
+}
+
+form input[type="text"],
+form input[type="email"] {
+	width:180px;
+    height: 30px;
+	padding:3px 10px;
+	border:1px solid var(--background-footer);
+	border-radius:100px;
+	background-color:var(--background-nav);
+	margin:8px 0;
+	display: flex;
+}
+
+form input[type="text"]:hover{
+	cursor:pointer;
+}
+
+.form-container {
+    width: 400px;
+    height: 350px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.4)), url(./assets/background-contact.jpg);
+    border-radius: 30px;
+    gap: 10px;
+}
+
+.button {
+    background: var(--background-strong);
+    border: none;
+    padding: 10px 20px;
+    color: var(--background-nav);
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+footer {
+    display: flex;
+    gap: 20px;
+    background-color: #5f350e;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.logo-redes {
+    display: flex;
+    gap: 30px;
+}
+
+.logo-redes img {
+    width: 50px;
+}
