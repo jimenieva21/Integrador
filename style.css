@@ -623,6 +623,12 @@ footer {
         width: 200px;
     }
 
+    .descripcion {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
     .contact-form {
         flex-direction: column;
         text-align: center;
