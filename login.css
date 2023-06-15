@@ -170,6 +170,7 @@ header {
 body {
     background: linear-gradient(rgba(15, 0, 0, 0.1), rgba(17, 1, 1, 0.9)), url(./assets/background-contact.jpg);
     height: calc(100vh - 65px);
+    overflow-y:hidden;
 }
 
 main {
@@ -263,10 +264,9 @@ form input[type="text"]:hover{
     text-decoration: underline;
 }
 
-
 footer {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     background-color: #5f350e;
     width: 100%;
     flex-direction: column;
@@ -276,11 +276,15 @@ footer {
     bottom: 0;
 }
 
+footer h2 {
+    font-size: 18px;
+}
+
 .logo-redes {
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
 .logo-redes img {
-    width: 50px;
+    width: 30px;
 }
