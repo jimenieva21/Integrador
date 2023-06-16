@@ -579,14 +579,14 @@ footer {
     }
     
     .products-card img {
-        width: 110px;
-        height: 110px;
+        width: 100px;
+        height: 100px;
         border-radius: 100px;
     }
     
     .products-card a {
-        width: 130px;
-        height: 40px;
+        width: 110px;
+        height: 35px;
         align-items: center;
         font-size: 12px;
         text-align: center;
@@ -595,10 +595,10 @@ footer {
     }
     
     .products-card {
-        width: 150px;
-        height: 240px;
+        width: 130px;
+        height: 220px;
         padding: 10px;
-        gap: 10px;
+        gap: 7px;
     }
     
 
@@ -627,6 +627,7 @@ footer {
         width: 100%;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
 
     .contact-form {
@@ -638,7 +639,26 @@ footer {
     }
 
     .enviar {
-        font-size: 18px;
+        font-size: 14px;
+        width: 80px;
+        height: 30px;
+    }
+
+    .login-registro {
+        gap: 5px;
+    }
+
+    .login-registro a {
+        font-size: 14px;
+        width: 90px;
+        height: 40px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-registro {
+        font-size: 14px;
     }
 
     footer {
