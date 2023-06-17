@@ -301,9 +301,15 @@ footer h2 {
     }
 
     .form-container {
-        width: 200px;
-        height: 300px;
+        width: 300px;
+        height: 330px;
         padding: 10px;
-        gap: 10px;
+        gap: 5px;
+
+    }
+
+    #ingreso h2 {
+        font-size: 30px;
+        padding: 10px 0;
     }
 }
